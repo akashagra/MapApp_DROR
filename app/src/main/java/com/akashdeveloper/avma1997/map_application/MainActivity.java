@@ -25,6 +25,7 @@ import com.google.android.gms.common.api.Status;
 //import com.google.android.gms.location.places.Places;
 
 import com.google.android.gms.location.places.AutocompleteFilter;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -202,6 +203,9 @@ import java.util.concurrent.TimeUnit;
         builder.include(place2.getPosition());
          LatLngBounds bounds = builder.build();
          map.setLatLngBoundsForCameraTarget(bounds);
+         int padding=(int) (getResources().getDisplayMetrics().widthPixels * 0.10);
+         CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
+         map.moveCamera(cu);
     }
     private String getUrl(LatLng origin, LatLng dest, String directionMode)
     {
