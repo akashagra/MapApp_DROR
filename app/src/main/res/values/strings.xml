@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Map_Application</string>
+    <string name="google_maps_key">"Your api Key"</string>
+
+</resources>
