@@ -65,7 +65,7 @@ import java.util.concurrent.TimeUnit;
     static int requestCode=1;
     String source;
     String destination;
-  private PlaceAutocompleteAdapter autocompleteAdapter;
+  //private PlaceAutocompleteAdapter autocompleteAdapter;
 //    private GoogleApiClient mGoogleApiClient;
    //private static  LatLngBounds LAT_LNG_BOUNDS = new LatLngBounds(new LatLng(23.63936, 68.14712),new LatLng(28.20453, 97.34466));
      PlacesFieldSelector fieldSelector;

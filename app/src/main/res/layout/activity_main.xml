@@ -25,7 +25,7 @@
         android:layout_marginTop="66dp"
         android:layout_marginEnd="173dp"
         android:layout_marginBottom="17dp"
-        android:text="Button"
+        android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
