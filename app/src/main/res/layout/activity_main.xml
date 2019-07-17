@@ -10,28 +10,23 @@
         android:id="@+id/map_fragment"
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.67" />
+         />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="173dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="24dp"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/map_fragment"
-        app:layout_constraintVertical_bias="0.984" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/source_edittext"
@@ -39,10 +34,11 @@
         android:layout_height="wrap_content"
         android:hint="Enter the Source Location"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/map_fragment"
+        android:background="@color/cardview_light_background"
+        app:layout_constraintBottom_toTopOf="@+id/dest_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/map_fragment"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -50,14 +46,13 @@
         android:id="@+id/dest_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
         android:hint="Enter the Destination Location"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/map_fragment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.961"
-        app:layout_constraintStart_toEndOf="@+id/map_fragment"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.622" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/source_edittext" />
 
 
 </android.support.constraint.ConstraintLayout>

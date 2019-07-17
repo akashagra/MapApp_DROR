@@ -75,6 +75,7 @@ import java.util.concurrent.TimeUnit;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnGetDirection=findViewById(R.id.button);
+        setTitle("Maps: Making Your Search Easier");
         sourceEdittext =findViewById(R.id.source_edittext);
         destEditText= findViewById(R.id.dest_edittext);
 
@@ -203,7 +204,7 @@ import java.util.concurrent.TimeUnit;
         builder.include(place2.getPosition());
          LatLngBounds bounds = builder.build();
          map.setLatLngBoundsForCameraTarget(bounds);
-         int padding=(int) (getResources().getDisplayMetrics().widthPixels * 0.10);
+         int padding=(int) (getResources().getDisplayMetrics().widthPixels * 0.20);
          CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
          map.moveCamera(cu);
     }
